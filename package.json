@@ -1,0 +1,20 @@
+{
+    "name": "serial-example",
+    "description": "serial-example",
+    "version": "0.0.1",
+    "main": "node_modules/node-red/red/red.js",
+    "scripts": {
+        "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
+    },
+    "engines": {
+        "node": "12"
+    },
+    "dependencies": {
+        "node-red-contrib-modbus": "5.13.3"
+    },
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json"
+        }
+    }
+}
